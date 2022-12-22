@@ -1,0 +1,115 @@
+body {
+    background-color: #c6f0ea;
+}
+
+.Renseignements input:invalid + span:after {
+    content: 'Non renseigné';
+    color: red;
+}
+
+.Renseignements input:valid + span:after {
+    content: 'Renseigné';
+    color: darkgreen;
+}
+
+.titre {
+    font-size: xx-large;
+    color: green ;
+    font-weight: bolder;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo_afpa {
+    object-fit: contain;
+}
+
+.separation_titre {
+    size: 20px;
+    border-top: 5px solid green;
+}
+
+.separation_footer {
+    border-top: 5px solid green;
+    position: absolute;
+}
+
+.Duree {
+    margin-top: 1%;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 21%;
+    width: 50%;
+}
+
+.choix {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.Renseignements {
+    border: 3px double black;
+    padding: 20px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left: 20%;
+    width: 50%;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.date label {
+    margin-bottom: 10px;
+}
+
+.Raisons {
+    margin-top: 1%;
+    border: 1px solid black;
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 21%;
+    width: 50%;
+}
+
+.Raisons label {
+    display: flex;
+    font-size: smaller;
+    width: auto;
+    background-color: bisque;
+    border: 1px dotted black;
+    margin: 2px;
+}
+
+.Raisons label:hover {
+    background-color: lightsalmon;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    bottom: 2%;
+    width: 100%;
+}
+
+.submit {
+    position: relative;
+    left: 45%;
+    margin-top: 10px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="ressources/afpa.gif" type="image/x-icon">
+    <title>Formulaire d'absence</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <p class="titre">Autorisation d'absence</p> <img src="ressources/afpa.gif" alt="logo Afpa"
+                class="logo_afpa">
+        </div>
+        <hr class="separation_titre">
+    </header>
+    <form action="signature.html" method="get">
+        <section class="Renseignements">
+            <p>Nom :</p> <input type="text" name="nom" id="nom" placeholder="Saisi du nom" required><span></span>
+            <p>Prénom :</p> <input type="text" name="prenom" id="prenom" placeholder="Saisi du prénom" required><span></span>
+            <p>Intitulé de la formation</p> <select title="Liste des formations" name="listeFormation" id="listeFormation">
+                <option value="choix1">Concepteur développeur d'application</option>
+                <option value="choix2">Développeur web et mobile</option>
+                <option value="choix3">Technicien système et réseau</option>
+                <option value="choix4">Technicien Helpdesk</option>
+                <option value="choix5">Administrateur d'infrastructures sécurisés
+                </option>
+            </select>
+        </section>
+        <section id="Duree" class="Duree">
+            <div class="choix">
+                <label>
+                    <input type="radio" title="Absence ponctuel" class="absence" name="absence" id="ponctuel"
+                        onclick="remplirDuree()" value="ponctuel"> Absence ponctuel
+                </label>
+                <label><input type="radio" title="Absence longue" name="absence" id="longue" onclick="remplirDuree()"
+                        value="longue"> Absence longue</label>
+            </div>
+        </section>
+        <article id="Raisons" class="Raisons"></article>
+        <button type="submit" id="submit" class="submit">Envoyez</button>
+    </form>
+    <footer>
+        <div class="footer">
+            <p>AN02-PCS C6 Version 05</p>
+            <p>Date d'application: 01/04/17</p>
+            <p>Auteur : Retournay Steve</p>
+        </div>
+    </footer>
+</body>
+<script src="script/utilitaires.js"></script>
+<script src="script/script.js"></script>
+
+</html>

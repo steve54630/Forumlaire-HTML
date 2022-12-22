@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/signature.css">
+    <link rel="shortcut icon" href="ressources/afpa.gif" type="image/x-icon">
+    <title>Autorisation d'absence
+    </title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <p class="titre">Autorisation d'absence</p> <img src="ressources/afpa.gif" alt="logo Afpa"
+                class="logo_afpa">
+        </div>
+        <hr class="separation_titre">
+    </header>
+    <button onclick="window.print()" class="Imprimer">Imprimer le récapitulatif</button>
+    <main id="form" class="form">
+    <section class="Renseignements">
+        <p>Nom :</p> <input type="text" name="Nom" id="nom" placeholder="Saisi du nom">
+        <p>Prénom :</p> <input type="text" name="Prenom" id="prenom" placeholder="Saisi du prénom">
+        <p>Intitulé de la formation</p> <select title="Liste des formations" name="listeFormation" id="listeFormation">
+            <option value="choix1">Concepteur développeur d'application</option>
+            <option value="choix2">Développeur web et mobile</option>
+            <option value="choix3">Technicien système et réseau</option>
+            <option value="choix4">Technicien Helpdesk</option>
+            <option value="choix5">Administrateur d'infrastructures sécurisés
+            </option>
+        </select>
+    </section>
+    <section id="Duree" class="Duree">
+        <div id="choixAbsence">
+            <p>
+                <input type="radio" label="Absence ponctuel" class="absence" name="absence" id="ponctuel" onclick="remplirDuree()" value="ponctuel"> Absence ponctuel
+            </p>
+            <p><input type="radio" label="Absence longue" name="absence" id="longue" onclick="remplirDuree()" value="longue"> Absence longue</p>
+        </div>
+    </section>
+    </main>
+    <main class="grid">
+        <article id="Raisons" class="Raisons"></article>
+        <article id="Signature" class="signature">
+            <section class="Signature_entreprise">
+                <p>Cachet et signature de l'entreprise ou de</p>
+                <input type="text" name="entreprise" title="Nom de l'entreprise" id="entreprise" placeholder="">
+                <p>Merci d'apposer votre cachet pour justifier de l'absence de la formation de M. <input type="text" title="Nom de l'absent" name="absent" id="absent" placeholder=""></p>
+                <section class="Signature_stagiaire"> 
+                 <p>Date et signature du stagiaire</p>
+                </section>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>AN02-PCS C6 Version 05</p>
+            <p>Date d'application: 01/04/17</p>
+            <p>Auteur : Retournay Steve</p>
+        </div>
+    </footer>
+</body>
+<script src="script/utilitaires.js"></script>
+<script src="script/signature.js"></script>
+
+</html>
